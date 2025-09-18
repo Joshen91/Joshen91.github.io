@@ -3,6 +3,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-image: url('https://raw.githubusercontent.com/Joshen91/Joshen91.github.io/61b5b91edc5d390ed776248e028d45edf86fa37b/mobilabonnemang-bg.jpg');
+    background-size: cover; /* Covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps it fixed while scrolling (optional) */
 }
 
 header {
