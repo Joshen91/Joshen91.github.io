@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffd700; /* Gold accent on hover */
+    color: #000000; /* Gold accent on hover */
 }
 
 .hero {
