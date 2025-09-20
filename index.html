@@ -3,83 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobilabonnemang.com</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Switch Phone Plans - Get Better Deals</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Link to your CSS file -->
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/background-logo.jpg" alt="Mobilabonnemang Logo" class="logo-img">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Privat</a></li>
-                <li><a href="about.html">Företag</a></li>
-                <li><a href="#contact">Ramavtal</a></li>
-            </ul>
-        </nav>
+    <header class="hero">
+        <h1>Switch to a Better Phone Subscription</h1>
+        <p>Enter your details and get personalized offers from top operators. Save time and money – it's free and no-obligation!</p>
+        <a href="#form-section" class="cta-button">Get Offers Now</a>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <h2>Welcome to <span>Mobilabonnemang.com</span></h2>
-            <p>Hitta billigaste priset hos den bästa operatören för dig!</p>
-            <a href="#contact" class="cta-button">Gå vidare</a>
-        </section>
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>Step 1: Fill the Form</h3>
+                <p>Tell us about your current plan and contact info (takes 1 minute).</p>
+            </div>
+            <div class="step">
+                <h3>Step 2: Get Offers</h3>
+                <p>Up to 3 operators will contact you with better deals.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3: Choose & Switch</h3>
+                <p>Compare and pick the best one – no pressure!</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="contact">
-            <h2>Bli kontaktad</h2>
-            <form action="https://formspree.io/f/your-endpoint" method="POST">
-                <div class="form-group">
-                    <label for="name">Namn:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                 </div>
-                <div class="form-group">
-                    <label for="phone">Pris:</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                 </div>
-                <div class="form-group">
-                    <label for="phone">Surfmängd:</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Telefonnummer:</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                 </div>
-                <div class="form-group">
-                    <label for="phone">Adress:</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                 </div>
-                <div class="form-group">
-                    <label for="phone">Postnummer:</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="submit-button"><i class="fas fa-paper-plane"></i> Bli Kontaktad!</button>
-            </form>
-        </section>
-    </main>
+    <section id="form-section" class="form-section">
+        <h2>Enter Your Details</h2>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">  <!-- Replace with your Formspree endpoint -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="current-price">Current Subscription Price (per month):</label>
+            <input type="number" id="current-price" name="current_price" min="0" step="0.01" required>
+
+            <label for="data-amount">Current Data Amount (GB per month):</label>
+            <input type="number" id="data-amount" name="data_amount" min="0" required>
+
+            <button type="submit" class="cta-button">Submit & Get Offers</button>
+        </form>
+        <p class="privacy-note">Your info is shared only with relevant operators. We respect your privacy – no spam!</p>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Mobilabonnemang.com. All rights reserved. <a href="#contact" class="footer-link">Contact Us</a></p>
-        <div class="social-icons">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        </div>
+        <p>&copy; 2025 Your Website. All rights reserved.</p>
     </footer>
 </body>
 </html>
