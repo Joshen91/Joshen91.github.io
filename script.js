@@ -6,31 +6,29 @@
 }
 
 body {
-    font-family: 'Inter', Arial, Helvetica, sans-serif; /* Modern font with fallback */
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
     min-height: 100vh;
 }
 
-/* Main content wrapper for two-column layout */
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px; /* Constrain width for larger screens */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
-    gap: 2rem; /* Space between columns */
+    gap: 2rem;
 }
 
-/* Hero section */
 header.hero {
-    background-color: #1e40af; /* Darker blue for richer look */
+    background: linear-gradient(135deg, #1e40af, #3b82f6);
     color: #ffffff;
     text-align: center;
     padding: 4rem 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header.hero h1 {
@@ -45,15 +43,14 @@ header.hero p {
     margin: 0 auto 1.5rem;
 }
 
-/* CTA button styles */
 a.cta-button,
 button.cta-button {
     display: inline-block;
-    background-color: #22c55e; /* Brighter green for energy */
+    background-color: #22c55e;
     color: #ffffff;
     padding: 0.8rem 2rem;
     text-decoration: none;
-    border-radius: 8px; /* Softer corners */
+    border-radius: 8px;
     font-weight: 600;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -61,20 +58,19 @@ button.cta-button {
 a.cta-button:hover,
 button.cta-button:hover {
     background-color: #16a34a;
-    transform: translateY(-2px); /* Subtle lift effect */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
 }
 
-/* How It Works section (left column) */
 section.how-it-works {
-    flex: 1 1 40%; /* Take ~40% of width */
-    min-width: 300px; /* Prevent squishing */
+    flex: 1 1 40%;
+    min-width: 300px;
     padding: 2rem;
 }
 
-/* Stack steps vertically */
 .steps {
     display: flex;
-    flex-direction: column; /* Vertical stacking */
+    flex-direction: column;
     gap: 1.5rem;
 }
 
@@ -87,7 +83,7 @@ section.how-it-works {
 }
 
 .step:hover {
-    transform: translateY(-5px); /* Hover lift effect */
+    transform: translateY(-5px);
 }
 
 .step h3 {
@@ -96,9 +92,8 @@ section.how-it-works {
     margin-bottom: 0.5rem;
 }
 
-/* Form section (right column) */
 section.form-section {
-    flex: 1 1 40%; /* Take ~40% of width */
+    flex: 1 1 40%;
     min-width: 300px;
     padding: 2rem;
     background-color: #ffffff;
@@ -115,6 +110,12 @@ form {
 label {
     font-weight: 600;
     color: #333;
+}
+
+label::after {
+    content: "*";
+    color: #dc2626;
+    margin-left: 0.2rem;
 }
 
 input {
@@ -163,10 +164,9 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     main {
-        flex-direction: column; /* Stack sections vertically */
+        flex-direction: column;
     }
 
     section.how-it-works,
