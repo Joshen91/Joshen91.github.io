@@ -3,62 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Byt mobilabonnemang - Få en bättre deal</title>
-    <link rel="stylesheet" href="styles.css">  <!-- Link to your CSS file -->
+    <title>Switch Phone Plans - Get Better Deals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
 </head>
 <body>
     <header class="hero">
-        <h1>Byt till ett bättre mobilabonnemang</h1>
-        <p>Ange dina uppgifter och få personliga erbjudanden från toppoperatörer. Spara tid och pengar – det är gratis och utan förpliktelser!</p>
-        <a href="#form-section" class="cta-button">Få erbjudanden nu!</a>
+        <h1>Switch to a Better Phone Subscription</h1>
+        <p>Enter your details and get personalized offers from top operators. Save time and money – it's free and no-obligation!</p>
+        <a href="#form-section" class="cta-button">Get Offers Now</a>
     </header>
 
-    <section class="how-it-works">
-        <h2>Hur det fungerar!</h2>
-        <div class="steps">
-            <div class="step">
-                <h3>Steg 1: Fyll i formuläret</h3>
-                <p>Berätta om ditt nuvarande abonnemang och kontaktuppgifter (tar 1 minut).</p>
+    <main>
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <h3>Step 1: Fill the Form</h3>
+                    <p>Tell us about your current plan and contact info (takes 1 minute).</p>
+                </div>
+                <div class="step">
+                    <h3>Step 2: Get Offers</h3>
+                    <p>Up to 3 operators will contact you with better deals.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 3: Choose & Switch</h3>
+                    <p>Compare and pick the best one – no pressure!</p>
+                </div>
             </div>
-            <div class="step">
-                <h3>Steg 2: Få erbjudanden</h3>
-                <p>Upp till 3 leverantörer kontaktar dig för bästa erbjudandet.</p>
-            </div>
-            <div class="step">
-                <h3>Steg 3: Välj och byt.</h3>
-                <p>Jämför och välj det bästa för dig!</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="form-section" class="form-section">
-        <h2>Fyll i dina uppgifter!</h2>
-        <form action="https://formspree.io/f/xgvlgqzg" method="POST">  <!-- Replace with your Formspree endpoint -->
-            <label for="name">Namn:</label>
-            <input type="text" id="name" name="name" required>
+        <section id="form-section" class="form-section">
+            <h2>Enter Your Details</h2>
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="phone">Mobilnummer:</label>
-            <input type="tel" id="phone" name="phone" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="current-price">Din nuvarande månadskostnad:</label>
-            <input type="number" id="current-price" name="current_price" min="0" step="0.01" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
 
-            <label for="data-amount">Din nuvarande surfmängd</label>
-            <input type="number" id="data-amount" name="data_amount" min="0" required>
+                <label for="current-price">Current Subscription Price (per month):</label>
+                <input type="number" id="current-price" name="current_price" min="0" step="0.01" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="data-amount">Current Data Amount (GB per month):</label>
+                <input type="number" id="data-amount" name="data_amount" min="0" required>
 
-            <button type="submit" class="cta-button">Fortsätt!</button>
-        </form>
-        <p class="privacy-note">Dina uppgifter delas endast med relevanta operatörer. Vi respekterar din integritet – ingen spam!</p>
-    </section>
+                <button type="submit" class="cta-button">Submit & Get Offers</button>
+            </form>
+            <p class="privacy-note">Your info is shared only with relevant operators. We respect your privacy – no spam!</p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Your Website. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
